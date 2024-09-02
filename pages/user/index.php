@@ -77,13 +77,12 @@
                                                     <td><?= $data['username'] ?></td>
                                                     <td>
                                                         <a href="edit_user.php?id=<?= $data['id'] ?>" class="btn btn-warning"><i class="ti ti-edit"></i></a>
-                                                        <a href="../../action/user_action/delete_user_act.php?id=<?= $data['id'] ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?')"><i class="ti ti-trash"></i></a>
+                                                        <a href="../../action/user_action/delete_user.php?id=<?= $data['id'] ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?')"><i class="ti ti-trash"></i></a>
                                                     </td>
                                                 </tr>
                                             <?php
                                             }
                                             ?>
-
                                         </tbody>
                                     </table>
                                 </div>
@@ -94,6 +93,7 @@
             </div>
         </div>
     </div>
+    <?php include '../../pages/layout/footer.php' ?>
     <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/sidebarmenu.js"></script>

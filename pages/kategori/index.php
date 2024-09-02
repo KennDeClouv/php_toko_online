@@ -30,7 +30,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <a href="" class="btn btn-success float-md-end">Add Category +</a>
+                                <a href="create_kategori.php" class="btn btn-success float-md-end">Add Category +</a>
                                 <h5 class="card-title">Kategori</h5>
                                 <?php
                                 if (isset($_SESSION['msg'])) {
@@ -76,7 +76,7 @@
                                                 <td><?= $data['nama'] ?></td>
                                                 <td>
                                                     <a class="btn btn-warning" href="edit_kategori.php?id=<?= $data['id'] ?>"><i class="ti ti-pencil"></i></a>
-                                                    <a class="btn btn-danger" href="../../action/delete_kategori.php?id=<?= $data['id'] ?>"><i class="ti ti-trash"></i></a>
+                                                    <a class="btn btn-danger" href="../../action/kategori_action/delete_kategori.php?id=<?= $data['id'] ?>"><i class="ti ti-trash"></i></a>
                                                 </td>
                                             </tr>
                                         <?php
@@ -94,6 +94,7 @@
 
         </div>
     </div>
+    <?php include '../layout/footer.php' ?>
     <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/sidebarmenu.js"></script>

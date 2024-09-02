@@ -9,7 +9,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 // action for insert data to database
-$sql = "INSERT INTO user VALUES (null,'$name', '$username', '$email', '$password')";
+$sql = "INSERT INTO user VALUES (null,'$name', '$email', '$username', '$password')";
 
 if ($conn->query($sql) == TRUE) {
     echo "<script>alert('Register Success');</script>";
@@ -18,5 +18,3 @@ if ($conn->query($sql) == TRUE) {
     echo "<script>alert('Register Failed');</script>";
     echo "<script>location.href='../pages/register_view.php';</script>";
 }
-
-?>

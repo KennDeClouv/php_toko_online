@@ -1,14 +1,13 @@
-<?php 
-    include '../../connection/connection.php';
+<?php
+include '../../connection/connection.php';
 
-    $id = $_GET['id'];
-    
-    $sql = 'SELECT * FROM user WHERE id=  '. $id;
+$id = $_GET['id'];
 
-    $result = $conn->query($sql);
+$sql = "SELECT * FROM user WHERE id= $id";
+
+$result = $conn->query($sql);
 
 
-    if($result->num_rows > 0){
-        $data = $result->fetch_assoc();
-    }
-?>
+if ($result->num_rows > 0) {
+    $data = $result->fetch_assoc();
+}
